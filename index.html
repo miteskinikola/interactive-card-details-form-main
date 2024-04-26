@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <main>
+      <img class="bg-mobile" src="bg-main-mobile.png" alt="background-mobile" />
+      <img
+        class="bg-desktop"
+        src="bg-main-desktop.png"
+        alt="background-desktop"
+      />
+      <div class="cards-container">
+        <div class="card" id="card-1">
+          <img class="card-logo" src="card-logo.svg" alt="card-logo" />
+
+          <h3 class="card-number">
+            <span class="card-number-span">0000 0000 0000 0000</span>
+          </h3>
+          <p class="name">JANE APPLESEED</p>
+          <p class="date">
+            <span class="date-1">00</span>/<span class="date-2">00</span>
+          </p>
+        </div>
+
+        <div class="card" id="card-2">
+          <span class="cvc">000</span>
+        </div>
+      </div>
+
+      <div class="input-container">
+        <form>
+          <div class="div-1">
+            <label for="card-name">CARDHOLDER NAME</label>
+            <input
+              class="input-style-1"
+              required
+              type="text"
+              id="card-name"
+              placeholder="e.g. Jane Appleseed"
+            />
+          </div>
+          <div class="div-1">
+            <label for="card-number">CARD NUMBER</label>
+            <input
+              class="input-style-1"
+              required
+              type="text"
+              id="card-number"
+              placeholder="e.g.1234 5678 9123 0000"
+            />
+          </div>
+          <div class="div-style-2">
+            <div class="div-2" id="div-style-3">
+              <div class="EXP-Date">
+                <label for="mounth">EXP.DATE</label>
+                <input
+                  class="input-style-2 MM"
+                  type="number"
+                  min="1"
+                  max="12"
+                  id="mounth"
+                  placeholder="MM"
+                  required
+                />
+              </div>
+              <div class="mounth-year">
+                <label for="(MM/YY)">(MM/YY)</label>
+                <input
+                  class="input-style-2 YY"
+                  type="number"
+                  min="24"
+                  max="30"
+                  id="year"
+                  placeholder="YY"
+                  required
+                />
+              </div>
+            </div>
+            <div class="div-3">
+              <label for="cvc">CVC</label>
+              <input
+                class="input-style-3"
+                required
+                type="number"
+                id="cvc"
+                placeholder="e.g. 123"
+              />
+            </div>
+          </div>
+          <div>
+            <input class="confirm" type="submit" value="Confirm" />
+          </div>
+        </form>
+      </div>
+
+      <section class="icon-complete hide">
+        <img src="icon-complete.svg" alt="complete-icon" />
+        <h3>THANK YOU!</h3>
+        <p>we've added your card details</p>
+        <form>
+          <input class="continue-btn" type="submit" value="Continue" />
+        </form>
+      </section>
+      <script src="script.js"></script>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Nikola Miteski</a>.
+    </div> -->
+  </body>
+</html>
